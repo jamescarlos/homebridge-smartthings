@@ -24,6 +24,7 @@ RUN alias ll='ls -alG'
 # Install homebridge                             #
 ##################################################
 
+RUN npm install -g ffmpeg --unsafe-perm
 RUN npm install -g homebridge --unsafe-perm
 
 # depending on your config.json you have to add your modules here!
@@ -35,6 +36,7 @@ RUN npm install -g homebridge-ninjablock-alarmstatedevice --unsafe-perm
 RUN npm install -g homebridge-luxtronik2 --unsafe-perm
 RUN npm install -g homebridge-people --unsafe-perm
 RUN npm install -g homebridge-tesla --unsafe-perm
+RUN npm install -g homebridge-camera-ffmpeg-ufv --unsafe-perm
 #RUN npm install -g homebridge-mqttswitch --unsafe-perm
 #RUN npm install -g homebridge-edomoticz --unsafe-perm
 
